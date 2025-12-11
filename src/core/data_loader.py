@@ -1,4 +1,10 @@
-# File loading utilities
+"""
+Data loading utilities for text files and stop words.
+
+This module handles file I/O operations, text tokenization, and word normalization.
+All text is normalized to lowercase to ensure consistent matching between source
+text and stop words.
+"""
 
 
 class DataLoader:

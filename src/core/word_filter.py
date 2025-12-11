@@ -1,4 +1,9 @@
-# Filtering logic
+"""
+Word filtering logic for length and stop word exclusion.
+
+Filters words based on length constraints (min/max) and removes stop words
+using set-based membership testing for O(1) lookup performance.
+"""
 
 
 class WordFilter:

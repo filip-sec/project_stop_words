@@ -1,4 +1,10 @@
-# Abstract base class for all processors
+"""
+Abstract base class for all text processing algorithms.
+
+Implements the Template Method pattern, providing a common workflow while
+allowing subclasses to customize the processing algorithm. All processors
+must implement the process() method with their specific algorithm.
+"""
 from abc import ABC, abstractmethod
 from typing import List
 

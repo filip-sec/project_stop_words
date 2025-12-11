@@ -1,6 +1,16 @@
 # Text Processing Project
 
-Text processing system implementing multiple algorithms (CPU single-threaded, multi-threaded, GPU, Apache Spark) for word filtering and statistical analysis.
+A text processing system that implements multiple algorithms (CPU single-threaded, multi-threaded, GPU, Apache Spark) for word filtering and statistical analysis on large text corpora.
+
+## What and Why
+
+This project demonstrates different approaches to text processing, comparing performance across various execution models:
+- **CPU Single-threaded**: Baseline sequential processing
+- **CPU Multi-threaded**: Parallel processing using all CPU cores
+- **GPU**: Accelerated processing with word-to-ID mapping
+- **Apache Spark**: Distributed processing for scalability
+
+The goal is to analyze how different architectures handle the same text processing task (word filtering and frequency analysis) and measure their performance characteristics.
 
 ## Processing Pipeline
 
@@ -69,7 +79,25 @@ statistics = stats.compute_statistics(filtered_words)
 - matplotlib >= 3.5.0
 - Optional: cupy/numba/pycuda (GPU), pyspark (Spark)
 
+## Testing
+
+Run the test suite:
+
+```bash
+python -m pytest tests/
+```
+
+Or with unittest:
+
+```bash
+python -m unittest discover tests
+```
+
 ## Documentation
 
 - [Word Matching Documentation](docs/WORD_MATCHING_DOCUMENTATION.md)
 - [Project Structure Plan](PROJECT_STRUCTURE_PLAN.md)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
