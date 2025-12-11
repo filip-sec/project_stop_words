@@ -5,13 +5,14 @@ Implements the Template Method pattern, providing a common workflow while
 allowing subclasses to customize the processing algorithm. All processors
 must implement the process() method with their specific algorithm.
 """
+
 from abc import ABC, abstractmethod
 from typing import List
 
 from .data_loader import DataLoader
-from .word_filter import WordFilter
+from .results import ProcessingResults, Statistics
 from .statistics import StatisticsCalculator
-from .results import Statistics, ProcessingResults
+from .word_filter import WordFilter
 
 
 class BaseProcessor(ABC):
