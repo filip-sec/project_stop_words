@@ -1,0 +1,18 @@
+# Core dependencies
+numpy>=1.21.0
+matplotlib>=3.5.0
+
+# CPU multi-threading
+# (built-in: concurrent.futures, multiprocessing)
+
+# GPU processing
+# cupy>=10.0.0  # Uncomment if using CuPy
+# numba>=0.56.0  # Uncomment if using Numba
+# pycuda>=2021.1  # Uncomment if using PyCUDA
+
+# Apache Spark
+# pyspark>=3.2.0  # Uncomment if using Spark
+
+# Utilities
+# tqdm>=4.62.0  # Optional: progress bars
+
